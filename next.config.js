@@ -1,7 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-}
+  images: {
+    domains: ['www.pexels.com'],
+  },
 
-module.exports = nextConfig
+  experimental: {
+    appDir: true,
+  },
+  swcMinify: true,
+};
+
+module.exports = nextConfig;
